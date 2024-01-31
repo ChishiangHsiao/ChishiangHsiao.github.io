@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>個人覆歷</title>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <style>
+    /* Navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .navbar a:hover {
+      background-color: white;
+      color: #333;
+    }
+    /* Company name */
+    .company-name {
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      margin-top: 60px;
+      margin-left: 60px;
+    }
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 60px;
+    }
+    /* Rectangles */
+    .rectangle {
+      width: 200px;
+      height: 100px;
+      margin-top: 60px;
+      margin-left: 60px;
+      background-color: #333;
+    }
+    .rectangle:hover {
+      background-color: white;
+      color: #333;
+    }
+    /* Responsive design */
+    @media only screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .navbar a {
+        margin: 5px;
+      }
+      .company-name {
+        margin-left: 0;
+      }
+      .rectangle {
+        margin-left: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>個人覆歷</h1>
-    <img src="resume.png">
+  <div class="navbar">
+    <a href="#">Tab 1</a>
+    <a href="#">Tab 2</a>
+    <a href="#">Tab 3</a>
+  </div>
+  <div class="company-name"></div>
+  <div class="rectangle"></div>
+  <div class="rectangle"></div>
+  <div class="footer">This is the footer.</div>
 </body>
 </html>
+
